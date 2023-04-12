@@ -1,0 +1,47 @@
+{
+  "name": "calculateur-bataille",
+  "version": "1.0.0",
+  "description": "Donne a chaque tour ta carte placé et celle de ton adversaire et le code va calculer qui gagne a la fin !",
+  "main": "index.js",
+  "scripts": {
+    "start": "[ ! -d 'node_modules' ] && npm install; clear && node .",
+    "build": "[ ! -d 'node_modules' ] && npm install; clear && node build.js"
+  },
+  "bugs": {
+    "url": "https://github.com/Pixel-Nation/calculateur-bataille/issues"
+  },
+  "homepage": "https://github.com/Pixel-Nation/calculateur-bataille#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pixel-Nation/calculateur-bataille.git"
+  },
+  "keywords": [],
+  "author": "TotoroGaming",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "ora": "^5.0.0",
+    "readline-sync": "^1.4.10"
+  },
+  "pkg": {
+    "scripts": "./index.js",
+    "targets": [
+      "node16-linuxstatic-arm64",
+      "node16-alpine-arm64",
+      "node16-linux-arm64",
+      "node16-macos-arm64",
+      "node16-win-arm64",
+      "node16-linuxstatic-x64",
+      "node16-alpine-x64",
+      "node16-linux-x64",
+      "node16-macos-x64",
+      "node16-win-x64"
+    ],
+    "outputPath": "./build"
+  },
+  "devDependencies": {
+    "chalk": "^4.1.2",
+    "pkg": "^5.8.1",
+    "util": "^0.12.5"
+  }
+}
